@@ -1,6 +1,6 @@
 # Usage: `python local_testing_tool.py test_number`, where the argument
-# test_number is either 0 (Test Set 1), 1 (Test Set 2) or 2 (Test Set 3).
 
+# test_number is either 0 (Test Set 1), 1 (Test Set 2) or 2 (Test Set 3).
 
 from __future__ import print_function
 
@@ -61,13 +61,10 @@ class JudgeSingleCase(object):
 
   def _ParseContestantInput(self, response):
     """Parses contestant's input.
-
     Parses contestant's input, which should be a number between 1 and self.len,
     or a string of length exactly self.len which contains only 0 and 1.
-
     Args:
       response: (str) one-line input given by the contestant.
-
     Returns:
       A int or str of the contestant's input.
       Also, an error string if input is invalid, otherwise None.
@@ -111,6 +108,7 @@ class JudgeSingleCase(object):
     Returns:
       An error string if an I/O rule was violated or the answer was incorrect,
       otherwise None.
+      
     """
     for i in range(MAX_QUERIES + 1):
       contestant_input, err = self._ReadContestantInput()
