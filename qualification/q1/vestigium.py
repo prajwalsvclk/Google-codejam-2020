@@ -26,4 +26,4 @@ for i in range(1, t + 1):
         if len(row_set) != n:
             c += 1
 
-    print("Case #{}: {} {} {}".format(i, trace, r, c))
+    print("Case #{}: {} {} {}".format(i, trace, r, c)) #op
